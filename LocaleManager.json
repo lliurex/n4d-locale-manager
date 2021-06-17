@@ -1,0 +1,25 @@
+{
+    "SETUP": {
+        "type":"python",
+        "path":"LocaleManager.py",
+        "class":"MovingProfiles"
+    },
+    "METHODS": {
+        "set_locale":
+        {
+            "allowed_groups":[
+                "sddm",
+                "sudo",
+                "admins"
+            ]
+        },
+        "set_keyboard":
+        {
+            "allowed_groups":[
+                "sddm",
+                "sudo",
+                "admins"
+            ]
+        }
+    }
+}
