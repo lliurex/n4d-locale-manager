@@ -1,0 +1,16 @@
+Source: n4d-locale-manager
+Section: admin
+Priority: extra
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 10), n4d-dev, python3-all, dh-python, python3-setuptools
+Standards-Version: 4.1.2
+Homepage: http://www.lliurex.net
+
+
+Package: n4d-locale-manager
+Architecture: all
+Pre-depends: n4d
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: N4D plugin for configuring locale
+ This plugin manages global locale and keyboard settings
+ 
