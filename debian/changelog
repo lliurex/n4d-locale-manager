@@ -1,3 +1,9 @@
+n4d-locale-manager (1.0.1.0) focal; urgency=medium
+
+  * First working release
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Mon, 21 Jun 2021 13:42:05 +0200
+
 n4d-locale-manager (1.0.0.0) focal; urgency=medium
 
   * Initial release.
