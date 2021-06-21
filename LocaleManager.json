@@ -2,7 +2,7 @@
     "SETUP": {
         "type":"python",
         "path":"LocaleManager.py",
-        "class":"MovingProfiles"
+        "class":"LocaleManager"
     },
     "METHODS": {
         "set_locale":
