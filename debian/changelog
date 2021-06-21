@@ -1,3 +1,9 @@
+n4d-locale-manager (1.0.2.0) focal; urgency=medium
+
+  * Fixed missing keyword
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Mon, 21 Jun 2021 16:19:16 +0200
+
 n4d-locale-manager (1.0.1.0) focal; urgency=medium
 
   * First working release
