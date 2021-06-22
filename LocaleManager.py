@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import n4d.responses
+
 import os
 import shlex
 
@@ -59,9 +61,13 @@ class LocaleManager:
         self.set_value(data,"LC_TELEPHONE",locale)
         self.set_value(data,"LC_TIME",locale)
         self.write_file("/etc/default/locale",data)
+        
+        return n4d.responses.build_successful_call_response()
 
     def set_keyboard(self,layaout,variant):
         data=self.read_file("/etc/default/keyboard")
         self.set_value(data,"XKBLAYOUT",layout)
         self.set_value(data,"XKBVARIANT",variant)
         self.write_file("/etc/default/keyboard",data)
+        
+        return n4d.responses.build_successful_call_response()
