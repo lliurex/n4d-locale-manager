@@ -1,3 +1,10 @@
+n4d-locale-manager (1.0.3.0) focal; urgency=medium
+
+  * Master tag: 09cf20ce87f730d152487ef76f085db7b05abf2d
+  * Fixed missing n4d return
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Tue, 22 Jun 2021 09:49:59 +0200
+
 n4d-locale-manager (1.0.2.0) focal; urgency=medium
 
   * Fixed missing keyword
