@@ -64,7 +64,7 @@ class LocaleManager:
         
         return n4d.responses.build_successful_call_response()
 
-    def set_keyboard(self,layaout,variant):
+    def set_keyboard(self,layout,variant):
         data=self.read_file("/etc/default/keyboard")
         self.set_value(data,"XKBLAYOUT",layout)
         self.set_value(data,"XKBVARIANT",variant)

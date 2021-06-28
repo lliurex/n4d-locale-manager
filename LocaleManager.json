@@ -7,18 +7,14 @@
     "METHODS": {
         "set_locale":
         {
-            "allowed_groups":[
-                "sddm",
-                "sudo",
-                "admins"
+            "allowed_users":[
+                "sddm"
             ]
         },
         "set_keyboard":
         {
-            "allowed_groups":[
-                "sddm",
-                "sudo",
-                "admins"
+            "allowed_users":[
+                "sddm"
             ]
         }
     }
