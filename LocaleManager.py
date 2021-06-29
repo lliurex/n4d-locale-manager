@@ -17,6 +17,8 @@ class LocaleManager:
             tokens=list(shlex.shlex(line,posix=True))
             if (len(tokens)>0):
                 if (tokens[1]=="="):
+                    if (len(tokens)==2):
+                        tokens.append("")
                     data.append([self.ASSIGNMENT,tokens])
                 else:
                     data.append([self.UNKNOWN,line])
