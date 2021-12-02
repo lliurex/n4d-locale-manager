@@ -51,21 +51,26 @@ class LocaleManager:
             data.append([self.ASSIGNMENT,[name,"=",value]])
 
     def set_locale(self,locale):
-        data=self.read_file("/etc/default/locale")
+        return self.set_locale_base(locale, "/")
+    
+    def set_locale_base(self,locale, basepath):
+        locale_region = locale if "valencian" no in locale else locale.split("@")[0]
+        data=self.read_file(basepath + "etc/default/locale")
         self.set_value(data,"LANG",locale)
-        self.set_value(data,"LC_ADDRESS",locale)
-        self.set_value(data,"LC_IDENTIFICATION",locale)
-        self.set_value(data,"LC_MEASUREMENT",locale)
-        self.set_value(data,"LC_MONETARY",locale)
-        self.set_value(data,"LC_NAME",locale)
-        self.set_value(data,"LC_NUMERIC",locale)
-        self.set_value(data,"LC_PAPER",locale)
-        self.set_value(data,"LC_TELEPHONE",locale)
-        self.set_value(data,"LC_TIME",locale)
+        self.set_value(data,"LC_ADDRESS",locale_region)
+        self.set_value(data,"LC_IDENTIFICATION",locale_region)
+        self.set_value(data,"LC_MEASUREMENT",locale_region)
+        self.set_value(data,"LC_MONETARY",locale_region)
+        self.set_value(data,"LC_NAME",locale_region)
+        self.set_value(data,"LC_NUMERIC",locale_region)
+        self.set_value(data,"LC_PAPER",locale_region)
+        self.set_value(data,"LC_TELEPHONE",locale_region)
+        self.set_value(data,"LC_TIME",locale_region)
         self.write_file("/etc/default/locale",data)
         
         return n4d.responses.build_successful_call_response()
-
+    
+    
     def set_keyboard(self,layout,variant):
         data=self.read_file("/etc/default/keyboard")
         self.set_value(data,"XKBLAYOUT",layout)
