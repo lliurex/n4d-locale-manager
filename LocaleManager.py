@@ -66,7 +66,7 @@ class LocaleManager:
         self.set_value(data,"LC_PAPER",locale_region)
         self.set_value(data,"LC_TELEPHONE",locale_region)
         self.set_value(data,"LC_TIME",locale_region)
-        self.write_file("/etc/default/locale",data)
+        self.write_file(basepath + "etc/default/locale",data)
         
         return n4d.responses.build_successful_call_response()
     
