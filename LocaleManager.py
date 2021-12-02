@@ -54,7 +54,7 @@ class LocaleManager:
         return self.set_locale_base(locale, "/")
     
     def set_locale_base(self,locale, basepath):
-        locale_region = locale if "valencian" no in locale else locale.split("@")[0]
+        locale_region = locale if "valencia" not in locale else locale.split("@")[0]
         data=self.read_file(basepath + "etc/default/locale")
         self.set_value(data,"LANG",locale)
         self.set_value(data,"LC_ADDRESS",locale_region)
