@@ -1,3 +1,9 @@
+n4d-locale-manager (1.0.7.1) jammy; urgency=medium
+
+  * Jammy release.
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Wed, 13 Sep 2023 19:34:46 +0200
+
 n4d-locale-manager (1.0.7.0) focal; urgency=medium
 
   * Fix: set_locale_base write always /etc/default/locale
